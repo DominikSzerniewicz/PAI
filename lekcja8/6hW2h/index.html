@@ -1,0 +1,75 @@
+﻿<html>
+
+
+	<head>
+		<title> Strona Samochody </title>
+		<link rel="stylesheet" href="main.css">
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+	
+	<div id="tematyka"><center><h1>Wycena auta</h1></center></div>
+	<div id="all">
+
+		<div id="inputy">
+		 	<label id="label" for="marka"><h2>Podaj markę:</h2></label><br>
+		  	<input class="input" type="text" id="marka" name="marka" placeholder="marka"><br>
+		  	<label for="model"><h2>Podaj model:</h2></label><br>
+			<input class="input" type="text" id="model" name="model" placeholder="model">
+
+			<p id="errorDane" style="margin-top: 2px; color: #c0392b;"></p>
+		</div>
+			
+		<div id="naped">	
+			<h2>Napęd:</h2>
+			<input type="radio" id="4x4" name="naped" value="4x4">
+			<label for="4x4">4x4</label><br>
+
+			<input type="radio" id="fwd" name="naped" value="fwd">
+			<label for="fwd">fwd</label><br>  
+
+			<input type="radio" id="rwd" name="naped" value="rwd">
+			<label for="rwd">rwd</label><br><br>
+
+			<p id="errorPlec" style="margin-top: 2px; color: #c0392b;"></p>
+		</div>
+		
+		<div id="data">
+		<h2>Data pierwszej rejestracji:</h2>
+			<input class="input" type="date" id="data zakupu" name="data zakupu">
+			<p id="errorDate" style="margin-top: 2px; color: #c0392b;"></p>
+		</div>
+		
+
+			<!--- Klasa --->
+			<h2>Wybierz klase</h2>
+		<div id="klasa">
+			<select id="select">
+				<option selected disabled>Wybierz</option>
+				<option value="0">sportowe</option>
+				<option value="1">terenowe</option>
+				<option value="2">klasyczne</option>
+				<option value="3">supersamochody</option>
+			</select>
+			<p id="errorKlasa" style="margin-top: 2px; color: #c0392b;"></p>
+			<br>
+
+		<h2>Załącz zdjecia samochodu</h2>
+<form action="/action_page.php">
+  <label for="myfile">Wybierz plik:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+</form>
+			
+<h2>Podaj przebieg</h2>
+<form action="/action_page.php">
+  <label for="quantity">Przebieg:</label>
+  <input type="number" id="quantity" name="quantity" min="0" max="1000000" step="10" value="30">
+</form>
+
+		<div id="autor"><h3>Autor: Dominik Szerniewicz</h3></div>
+		
+		<button type="button">oblicz!</button>
+	</body>
+
+</html>

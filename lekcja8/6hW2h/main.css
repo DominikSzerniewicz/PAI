@@ -1,0 +1,36 @@
+﻿h2{
+	text-align: center;
+	color: black;
+}
+
+#all{
+	margin: auto;
+	margin-top: 50px;
+	width: 500px;
+	text-align: center;
+	background: #00a3cc;
+}
+
+
+#butt
+{
+  cursor: pointer;
+  margin: 6px;
+  margin-top: 8px;
+  border: 2px black; solid;
+  background: #9b59b6;
+  border-radius: 25px;
+}
+
+#select{
+	margin: 5px;
+	border: 0px;
+	border-radius: 5px;
+}
+
+body
+{
+	margin: 0px;
+	background: #e6faff;
+	font-family: nesatho;
+}
